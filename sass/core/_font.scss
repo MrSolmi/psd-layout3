@@ -1,0 +1,14 @@
+@include font-face("Sansation", "../font/Sansation/Sansation_Light", "ttf") {
+	font-style: normal;
+	font-weight: 300;
+}
+
+@include font-face("Sansation", "../font/Sansation/Sansation_Regular", "ttf") {
+	font-style: normal;
+	font-weight: 400
+}
+
+@include font-face("Sansation", "../font/Sansation/Sansation_Bold", "ttf") {
+	font-style: bold;
+	font-weight: 700;
+}

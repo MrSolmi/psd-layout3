@@ -1,0 +1,126 @@
+.header {
+	background: url(../img/header/header-bg.jpg) center 10% / cover no-repeat;
+
+	.nav-panel {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+		height: 60px;
+	}
+
+	.logo {
+		margin-left: 30px;
+		color: #ffffff;
+		font-family: Sansation, sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+
+		span {
+			color: $red-color;
+		}
+	}
+
+	.menu {
+		width: 637px;
+		display: flex;
+		justify-content: space-between;
+
+		a {
+			font-family: Sansation, sans-serif;
+			color: #ffffff;
+			transition: color 0.20s ease-in;
+			
+			&:hover {
+				color: $blue-color;
+			}
+		}
+	}
+
+	.share {
+		display: flex;
+		justify-content: space-between;
+		margin-right: 42px;
+		width: 85px;
+
+		a {
+			border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+			transition: border 0.20s ease-in;
+			border-radius: 50%;
+			height: 30px;
+			width: 25px;
+			display: flex;
+
+			img {
+				margin: auto;
+			}
+
+			&:hover {
+				border: 1px solid rgba($color: $blue-color, $alpha: 0.9);
+			}
+		}
+	}
+
+	.caption-panel {
+		position: relative;
+		width: 536px;
+		margin: 126px auto 163px auto;
+		border-left: 2px solid rgba($color: #ffffff, $alpha: 0.2);
+		border-top: 2px solid rgba($color: #ffffff, $alpha: 0.2);
+		border-right: 2px solid rgba($color: #ffffff, $alpha: 0.2);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.headline {
+			margin-top: 40px;
+			font-size: 42px;
+			font-weight: 700;
+			color: #ffffff;
+		}
+
+		.caption {
+			margin-top: 28px;
+			opacity: 0.7;
+			color: #ffffff;
+			width: 332px;
+			text-align: center;
+			line-height: 18px;
+		}
+
+		.button {
+			padding: 10px 30px;
+			font-size: 12px;
+			position: relative;
+			top: 19px;
+			text-transform: uppercase;
+			color: #ffffff;
+			border: 2px solid #ffffff;
+			transition: background-color 0.3s ease-in, border 0.3s ease-in;
+
+			&:hover {
+				background-color: rgba($color: $blue-color, $alpha: 0.2);
+				border: 2px solid rgba($color: #ffffff, $alpha: 0.7);
+			}
+		}
+
+		&::before, &::after {
+			display: block;
+			content: "";
+			position: absolute;
+			top: 100%;
+			width: 215px;
+			height: 1px;
+			border-top: 2px solid rgba($color: #ffffff, $alpha: 0.2);
+		}
+
+		&::before {
+			left: -2px;
+		}
+
+		&::after {
+			right: -2px;
+		}
+	}
+}

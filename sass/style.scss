@@ -1,0 +1,54 @@
+@import "core/_reset";
+@import "core/bourbon/core/bourbon";
+@import "core/_mixins";
+@import "core/_font";
+@import "core/_variables";
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+
+	&:after, &::before {
+		display: table;
+		content: "";
+		clear: both;
+	}
+}
+
+body {
+	height: 3000px;
+}
+
+.headline {
+	text-transform: uppercase;
+	font-family: Sansation, sans-serif;
+	color: #f7f7f7;
+}
+
+h1.headline {
+	font-size: 40px;
+}
+
+h2.headline {
+	font-size: 24px;
+}
+
+.caption {
+	font-family: Sansation, sans-serif;
+	color: #f7f7f7;
+	font-size: 14px;
+}
+
+
+
+.button {
+	display: block;
+}
+
+@import "blocks/_header";
+@import "blocks/_about-us";
+@import "blocks/_our-services";

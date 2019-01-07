@@ -1,0 +1,54 @@
+.our-services {
+	background: $dark-grey-color;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h1.headline {
+			margin-top: 46px;
+		}
+
+		.services-list {
+			margin-top: 55px;
+			display: flex;
+			flex-wrap: wrap;
+			
+			.services-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 144px 15px 137px 15px;
+				flex: 1 1 300px;
+				background: $light-grey-color;
+				transition: background-color 0.5s ease-in;
+				
+				.headline {
+					margin-top: 49px;
+				}
+
+				.caption {
+					margin-top: 13px;
+					line-height: 1.3em;
+					text-align: center;
+				}
+
+				.button {
+					margin-top: 28px;
+					font-size: 12px;
+					color: white;
+					padding: 7px 23px;
+					background-color: #959595;
+					border-radius: 2px;
+					text-transform: uppercase;
+					font-family: Sansation, sans-serif;
+				}
+
+				&:hover {
+					background-color: rgba($color: $blue-color, $alpha: 0.5);
+				}
+			}
+		}
+	}
+}
